@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Category>
+
+@foreach (var category in Model)
+{
+    <h2>@category.Name</h2>
+    @foreach (var component in category.Components)
+    {
+        <p>@component.Name</p>
+    }
+}
